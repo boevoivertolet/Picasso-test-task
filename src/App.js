@@ -5,7 +5,7 @@ import { ErrorPage } from './pages/error-page'
 import { DescriptionPage } from './pages/description-page'
 
 function App() {
-      const { data = [], isLoading } = useGetPostsQuery()
+      const { data = [], isLoading } = useGetPostsQuery({ limit: 10 })
 
       if (isLoading) return <h1>Loading...</h1>
 
