@@ -1,12 +1,26 @@
 import { useGetPostsQuery } from './redux/api'
+import { MainPage } from './pages/main-page'
+import { Navigate, Route, Routes } from 'react-router-dom'
+import { ErrorPage } from './pages/error-page'
+import DescriptionPage from './pages/description-page'
 
 function App() {
       const { data = [], isLoading } = useGetPostsQuery()
-      console.log(data)
 
       if (isLoading) return <h1>Loading...</h1>
 
-      return <div>{data && data.map((i) => <div key={i.id}>{i.title}</div>)}</div>
+      return (
+            <div>
+                  <Routes>
+                        <Route path={'/'} element={<Navigate to={'main'} />} />
+
+                        <Route path={'/main'} element={<MainPage data={data} />} />
+                        <Route path={'/description'} element={<DescriptionPage data={data} />} />
+
+                        <Route path={'/*'} element={<ErrorPage />} />
+                  </Routes>
+            </div>
+      )
 }
 
 export default App

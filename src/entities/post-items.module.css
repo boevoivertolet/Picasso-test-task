@@ -1,0 +1,30 @@
+.post_item {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: start;
+    margin: 10px;
+    align-items: center;
+    font-size: 26px;
+    min-height: 50px;
+    /*max-height: max-content;*/
+}
+.number{
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    width: 5%;
+}
+.title{
+    margin: 5px;
+    padding: 5px;
+    width: 30%;
+}
+.body{
+    margin: 5px;
+    padding: 5px;
+    width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
