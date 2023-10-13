@@ -1,11 +1,12 @@
-.post_item {
+.description_item {
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     justify-content: start;
     margin: 10px;
     align-items: center;
     font-size: 26px;
-    min-height: 50px;
+    min-height: 300px;
     max-height: max-content;
 }
 .number{
@@ -15,17 +16,17 @@
     width: 5%;
 }
 .title{
+    text-align: center;
     margin: 5px;
     padding: 5px;
     width: 60%;
 }
 .body{
+    text-align: center;
     margin: 5px;
     padding: 15px;
-    width: 35%;
     overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+
 }
 .button{
     margin: 15px;
