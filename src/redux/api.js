@@ -5,7 +5,7 @@ export const api = createApi({
       baseQuery: fetchBaseQuery({ baseUrl: 'https://jsonplaceholder.typicode.com/' }),
       endpoints: (build) => ({
             getPosts: build.query({
-                  query: ({ limit = 7, start = 0 }) => ({
+                  query: ({ limit = 10, start = 0 }) => ({
                         url: '/posts',
                         params: {
                               _limit: limit,

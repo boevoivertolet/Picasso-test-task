@@ -3,11 +3,28 @@ import { MainPage } from './pages/main-page'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import { ErrorPage } from './pages/error-page'
 import { DescriptionPage } from './pages/description-page'
+import { useEffect, useState } from 'react'
 
 function App() {
-      const { data = [], isLoading } = useGetPostsQuery({ limit: 10 })
+      const [limit, setLimit] = useState(7)
+      const [start, setStart] = useState(0)
+      const { data } = useGetPostsQuery({ limit, start })
 
-      if (isLoading) return <h1>Loading...</h1>
+      useEffect(() => {
+            document.addEventListener('scroll', scrollHandler)
+            return () => {
+                  document.removeEventListener('scroll', scrollHandler)
+            }
+      }, [])
+
+      const scrollHandler = (e) => {
+            if (
+                  e.target.documentElement.scrollHeight - (e.target.documentElement.scrollTop + window.innerHeight) <
+                  100
+            ) {
+                  setLimit((prev) => prev + 1)
+            }
+      }
 
       return (
             <div>
