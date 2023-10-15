@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/picasso-test-task/static/css/main.bb1523aa.css",
+    "main.js": "/picasso-test-task/static/js/main.6511e4a2.js",
+    "static/js/787.731e0da4.chunk.js": "/picasso-test-task/static/js/787.731e0da4.chunk.js",
+    "index.html": "/picasso-test-task/index.html",
+    "main.bb1523aa.css.map": "/picasso-test-task/static/css/main.bb1523aa.css.map",
+    "main.6511e4a2.js.map": "/picasso-test-task/static/js/main.6511e4a2.js.map",
+    "787.731e0da4.chunk.js.map": "/picasso-test-task/static/js/787.731e0da4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bb1523aa.css",
+    "static/js/main.6511e4a2.js"
+  ]
+}
