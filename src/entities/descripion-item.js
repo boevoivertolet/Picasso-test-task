@@ -11,7 +11,7 @@ export const DescriptionItem = ({ post }) => {
                         <h3>{post.title}</h3>
                   </div>
                   <div className={style.body}>{post.body}</div>
-                  <NavLink to={`/`}>
+                  <NavLink to={`/picasso-test-task`}>
                         <Button variant='outlined' className={style.button}>
                               Назад
                         </Button>
