@@ -30,7 +30,7 @@ function App() {
                   <Routes>
                         <Route path={'/'} element={<Navigate to={'main'} />} />
 
-                        <Route path={'/main'} element={<MainPage data={data} />} />
+                        <Route path={'/picasso-test-task'} element={<MainPage data={data} />} />
                         <Route path={'/description/:id'} element={<DescriptionPage data={data} />} />
 
                         <Route path={'/*'} element={<ErrorPage />} />
