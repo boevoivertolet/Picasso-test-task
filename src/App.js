@@ -1,7 +1,6 @@
 import { useGetPostsQuery } from './redux/api'
 import { MainPage } from './pages/main-page'
 import { Route, Routes } from 'react-router-dom'
-import { ErrorPage } from './pages/error-page'
 import { DescriptionPage } from './pages/description-page'
 import { useEffect, useState } from 'react'
 
@@ -30,8 +29,6 @@ function App() {
                   <Routes>
                         <Route path={'/picasso-test-task'} element={<MainPage data={data} />} />
                         <Route path={'/description/:id'} element={<DescriptionPage data={data} />} />
-
-                        <Route path={'/picasso-test-task/*'} element={<ErrorPage />} />
                   </Routes>
             </div>
       )
