@@ -7,8 +7,7 @@ import { useEffect, useState } from 'react'
 
 function App() {
       const [limit, setLimit] = useState(7)
-      const [start, setStart] = useState(0)
-      const { data } = useGetPostsQuery({ limit, start })
+      const { data } = useGetPostsQuery({ limit })
 
       useEffect(() => {
             document.addEventListener('scroll', scrollHandler)
@@ -22,7 +21,7 @@ function App() {
                   e.target.documentElement.scrollHeight - (e.target.documentElement.scrollTop + window.innerHeight) <
                   100
             ) {
-                  setLimit((prev) => prev + 1)
+                  setLimit((prev) => prev + 2)
             }
       }
 
