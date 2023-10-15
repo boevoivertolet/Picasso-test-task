@@ -13,7 +13,7 @@ export const DescriptionItem = ({ post }) => {
                   <div className={style.body}>{post.body}</div>
                   <NavLink to={`/`}>
                         <Button variant='outlined' className={style.button}>
-                              Back
+                              Назад
                         </Button>
                   </NavLink>
             </Paper>

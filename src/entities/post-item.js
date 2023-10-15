@@ -13,7 +13,7 @@ export const PostItem = ({ post }) => {
                   <div className={style.body}>{post.body}</div>
                   <div className={style.button}>
                         <NavLink to={`/description/${post.id}`}>
-                              <Button variant='outlined'>Vie</Button>
+                              <Button variant='outlined'>Просмотр</Button>
                         </NavLink>
                   </div>
             </Paper>

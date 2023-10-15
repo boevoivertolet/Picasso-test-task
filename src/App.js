@@ -28,8 +28,6 @@ function App() {
       return (
             <div>
                   <Routes>
-                        <Route path={'/'} element={<Navigate to={'picasso-test-task'} />} />
-
                         <Route path={'/picasso-test-task'} element={<MainPage data={data} />} />
                         <Route path={'/description/:id'} element={<DescriptionPage data={data} />} />
 
